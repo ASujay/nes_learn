@@ -27,4 +27,50 @@ Main component of the nes board will be:
     2. A PPU nametable describes the layout of a frame's background. Each nametable holds information  of 32x30 tiles of background and rheir color attributes.
 
 ## NES Cartridge
+- CIC - 
 
+- PROGRAM ROM - This store in read-only memory has the program code(32KB). This code dictates the logic of our game.  
+
+- CHARACTER ROM - Also resides inside the cartridge and contain the graphics data(chars) that will be used by our game. Ex: Background and sprites are stored in pattern tables and color pallette information. We have about 8KB of character rom.
+    1. We have 2 pattern tables: 
+        - Sprite pattern table
+        - Background pattern table
+    2. Inside the character rom, there might be multiple banks of tiles. So some cartridges have a mapper chip that determines which bank should be used. This done to add more graphics that the standard capability of the NES cartridge.
+
+- Every game cartridge is differen. Depending on the game we might have extra chips in the catridge. Some have more program and character ROM than the default value. We can also have WRAM inside the chip that can save game state. This would require a battery to persists the data in the RAM.
+
+- NROM format - 32KB program rom, and 8KB character rom. Vanilla cartridge.
+
+## 6502 PROCESSOR
+
+## 6502 ASSEMBLER
+
+## 6502 ASSEMBLY
+
+## NES GRAPHICS
+
+## SPRITES
+
+## CONTROLLER INPUT
+
+## SUBPIXEL MOVEMENT
+
+## SCROLLING BACKGROUND
+
+## SPLIT SCREEN
+
+## ADDING GAME OBJECTS
+
+## GENERATING RANDOM NUMBERS
+
+## COLLISON DETECTION
+
+## DISPLAYING SCORE VALUES
+
+## GAME STATE AND TILE SCREEN
+
+## ENCODING LEVEL DATA
+
+## NES AUDIO
+
+## NES C DEVELOPMENT
